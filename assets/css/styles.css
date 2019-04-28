@@ -286,12 +286,14 @@ dd, li, blockquote {
     --ds-grid-spacing-column: 10px;
     --ds-grid-spacing-row: 10px;
     background-color: #444;
+    --vendy-padding: 10px;
+    background-color: #444;
     box-sizing: padding-box;
-    padding: 10px;
+    padding: var(--vendy-padding);
 }
 .vendy-cell {
     position: relative;
-    height: calc((1024px - (5 * var(--ds-grid-spacing)))/ 6 );
+    height: calc((1024px - (2 * var(--vendy-padding)) - (5 * var(--ds-grid-spacing-row)))/ 6 );
     border-radius: 6px;
     background: linear-gradient(0deg, #666 0%, #AAA 100%);
     display: flex;
